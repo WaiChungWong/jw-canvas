@@ -1,6 +1,6 @@
 {
   "name": "jw-canvas",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A react component for canvas.",
   "author": "john wong <johnwongwwc@gmail.com>",
   "keywords": [
@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.5",
     "debounce": "^1.1.0",
     "prop-types": "^15.6.1",
     "supports-passive": "0.0.1"
