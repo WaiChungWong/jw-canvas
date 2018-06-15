@@ -21,7 +21,7 @@ Mainly for handling resize events to allow maintaining pixel size (to prevent fr
 
 [![NPM](https://nodei.co/npm/jw-canvas.png)](https://nodei.co/npm/jw-canvas)
 
-## methods
+## Methods
 
 | Method             | Description                                                                                                                                                                                              |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ Mainly for handling resize events to allow maintaining pixel size (to prevent fr
 
 ## Props
 
-| Props                         | Description                                                                              |
+| Prop                          | Description                                                                              |
 | ----------------------------- | ---------------------------------------------------------------------------------------- |
 | `maintainPixelSize`(optional) | whether the canvas should keep dimension from the moment it was created. Default: `true` |
 | `onResize`(optional)          | event handler when the canvas is being resized.                                          |
