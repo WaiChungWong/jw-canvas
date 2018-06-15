@@ -1,9 +1,9 @@
 {
   "name": "jw-canvas",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A react component for canvas.",
   "author": "john wong <johnwongwwc@gmail.com>",
-  "homepage": "http://https://waichungwong.github.io/jw-canvas/build",
+  "homepage": "https://waichungwong.github.io/jw-canvas/build",
   "keywords": [
     "canvas",
     "react"
