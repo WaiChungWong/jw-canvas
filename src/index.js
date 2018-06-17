@@ -40,16 +40,22 @@ class Demo extends Component {
   render() {
     return (
       <div>
-        <Canvas
-          ref={c => (this.canvas1 = c)}
-          id="canvas1"
-          onResize={() => this.draw1()}
-        />
-        <Canvas
-          ref={c => (this.canvas2 = c)}
-          id="canvas2"
-          maintainPixelSize={false}
-        />
+        <div className="canvas-wrapper">
+          <span className="title">Draw once only</span>
+          <Canvas
+            ref={c => (this.canvas1 = c)}
+            id="canvas1"
+            maintainPixelSize={false}
+          />
+        </div>
+        <div className="canvas-wrapper">
+          <span className="title">Redraw on resize</span>
+          <Canvas
+            ref={c => (this.canvas2 = c)}
+            id="canvas2"
+            onResize={() => this.draw2()}
+          />
+        </div>
       </div>
     );
   }

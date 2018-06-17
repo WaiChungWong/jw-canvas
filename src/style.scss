@@ -2,14 +2,28 @@ body {
   margin: 0px;
 }
 
-#canvas1,
-#canvas2 {
+.canvas-wrapper {
   position: absolute;
   width: 50%;
   height: 100%;
-}
 
-#canvas2 {
-  border-left: 1px solid;
-  left: 50%;
+  .title {
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0px;
+    z-index: 1;
+  }
+
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:last-child {
+    border-left: 1px solid;
+    left: 50%;
+  }
 }
