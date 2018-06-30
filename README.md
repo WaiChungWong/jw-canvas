@@ -25,11 +25,11 @@ Mainly for handling resize events to allow maintaining pixel size (to prevent fr
 
 ## Methods
 
-| Method                                                                         | Description                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `getCanvasElement()`                                                           | retrieve the canvas react component.                                                                                                                                                                      |
-| `getContext()`                                                                 | get the context of the canvas.                                                                                                                                                                            |
-| `getImageData(startX: integer, startY: integer, endX: integer, endY: integer)` | get the image data of the canvas with a give area. Parameters:<br> - `startX`: Default: `0`<br> - `startY`: Default: `0`<br> - `endX`: Default: the canvas width<br> - `endY`: Default: the canvas height |
+| Method             | Parameters                                                                                                                                                      | Description                                        |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| `getCanvasElement` |                                                                                                                                                                 | retrieve the canvas react component.               |
+| `getContext`       |                                                                                                                                                                 | get the context of the canvas.                     |
+| `getImageData`     | `startX`: integer. Default: `0`<br>`startY`: integer. Default: `0`<br>`endX`: integer. Default: the canvas width<br>`endY`: integer. Default: the canvas height | get the image data of the canvas with a give area. |
 
 ## Props
 
