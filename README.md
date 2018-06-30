@@ -17,17 +17,19 @@ Mainly for handling resize events to allow maintaining pixel size (to prevent fr
 [download-image]: https://img.shields.io/npm/dm/jw-canvas.svg
 [download-url]: https://npmjs.org/package/jw-canvas
 
+[Demo](http://waichungwong.github.io/jw-canvas/build)
+
 ## Install
 
 [![NPM](https://nodei.co/npm/jw-canvas.png)](https://nodei.co/npm/jw-canvas)
 
 ## Methods
 
-| Method             | Description                                                                                                                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `getCanvasElement` | retrieve the canvas react component.                                                                                                                                                                     |
-| `getContext`       | get the context of the canvas.                                                                                                                                                                           |
-| `getImageData`     | get the image data of the canvas with a give area. Parameters:<br> - `startX`: Default: `0`<br> - `startY`: Default: `0`<br> - `endX`: Default: the canvas width<br> - `endY`: Default: the canvas width |
+| Method                                                                         | Description                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `getCanvasElement()`                                                           | retrieve the canvas react component.                                                                                                                                                                      |
+| `getContext()`                                                                 | get the context of the canvas.                                                                                                                                                                            |
+| `getImageData(startX: integer, startY: integer, endX: integer, endY: integer)` | get the image data of the canvas with a give area. Parameters:<br> - `startX`: Default: `0`<br> - `startY`: Default: `0`<br> - `endX`: Default: the canvas width<br> - `endY`: Default: the canvas height |
 
 ## Props
 
