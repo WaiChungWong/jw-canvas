@@ -40,14 +40,20 @@ class Canvas extends Component {
       this.mutationObserver.observe(canvas, { attributes: true });
     }
 
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
     setTimeout(() => {
-      const { offsetWidth, offsetHeight } = canvas;
+      if (
+        canvas.width !== canvas.offsetWidth ||
+        canvas.height !== canvas.offsetHeight
+      ) {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
 
-      canvas.width = offsetWidth;
-      canvas.height = offsetHeight;
-
-      if (props.onResize) {
-        props.onResize(offsetWidth, offsetHeight);
+        if (props.onResize) {
+          props.onResize(canvas.offsetWidth, canvas.offsetHeight);
+        }
       }
     });
   }
