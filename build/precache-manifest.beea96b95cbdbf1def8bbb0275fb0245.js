@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/jw-canvas/build/static/js/runtime~main.129d7101.js"
   },
   {
-    "revision": "07827c2745d7a91cec14",
-    "url": "/jw-canvas/build/static/js/main.07827c27.chunk.js"
+    "revision": "534c4de4f47af89ad162",
+    "url": "/jw-canvas/build/static/js/main.534c4de4.chunk.js"
   },
   {
     "revision": "de045a94f5347d70006d",
     "url": "/jw-canvas/build/static/js/2.de045a94.chunk.js"
   },
   {
-    "revision": "07827c2745d7a91cec14",
+    "revision": "534c4de4f47af89ad162",
     "url": "/jw-canvas/build/static/css/main.b36b16c6.chunk.css"
   },
   {
-    "revision": "dde6fb8c876571e1b2614912ecc82dd7",
+    "revision": "c298b35101b8688c35b2154cc5a5ebde",
     "url": "/jw-canvas/build/index.html"
   }
 ];

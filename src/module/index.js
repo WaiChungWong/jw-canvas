@@ -30,8 +30,7 @@ class Canvas extends Component {
   }
 
   _mount() {
-    const { canvas } = this;
-    const { offsetWidth, offsetHeight } = canvas;
+    const { canvas, props } = this;
 
     window.addEventListener("resize", this._resizeHandler, eventOptions);
     canvas.addEventListener("resize", this._resizeHandler, eventOptions);
@@ -41,8 +40,16 @@ class Canvas extends Component {
       this.mutationObserver.observe(canvas, { attributes: true });
     }
 
-    canvas.width = offsetWidth;
-    canvas.height = offsetHeight;
+    setTimeout(() => {
+      const { offsetWidth, offsetHeight } = canvas;
+
+      canvas.width = offsetWidth;
+      canvas.height = offsetHeight;
+
+      if (props.onResize) {
+        props.onResize(offsetWidth, offsetHeight);
+      }
+    });
   }
 
   _unmount() {

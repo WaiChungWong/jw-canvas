@@ -24,7 +24,7 @@ class Demo extends Component {
     const element = canvas.getCanvasElement();
     const { width, height } = element;
 
-    const radius = 40;
+    const radius = 70;
     const centerX = width / 2;
     const centerY = height / 2;
 
@@ -46,6 +46,7 @@ class Demo extends Component {
             ref={c => (this.canvas1 = c)}
             id="canvas1"
             maintainPixelSize={false}
+            onResize={() => this.draw1()}
           />
         </div>
         <div className="canvas-wrapper">
