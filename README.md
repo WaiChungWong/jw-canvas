@@ -1,7 +1,7 @@
 # jw-canvas
 
 A react component for canvas.
-Mainly for handling resize events to allow maintaining pixel size (to prevent from stretching).
+Mainly for handling resize events to allow auto-maintaince on pixel size and ratio to prevent stretching.
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]

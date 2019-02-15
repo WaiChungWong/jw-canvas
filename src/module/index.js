@@ -36,6 +36,11 @@ class Canvas extends Component {
     window.addEventListener("resize", this._resizeHandler, eventOptions);
     canvas.addEventListener("resize", this._resizeHandler, eventOptions);
 
+    if (window.MutationObserver) {
+      this.mutationObserver = new window.MutationObserver(this._resizeHandler);
+      this.mutationObserver.observe(canvas, { attributes: true });
+    }
+
     canvas.width = offsetWidth;
     canvas.height = offsetHeight;
   }
@@ -45,6 +50,10 @@ class Canvas extends Component {
 
     window.removeEventListener("resize", this._resizeHandler);
     canvas.removeEventListener("resize", this._resizeHandler);
+
+    if (window.MutationObserver) {
+      this.mutationObserver.disconnect();
+    }
   }
 
   /** Retrieve the canvas react component. */

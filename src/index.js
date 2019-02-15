@@ -24,13 +24,13 @@ class Demo extends Component {
     const element = canvas.getCanvasElement();
     const { width, height } = element;
 
-    const radius = 70;
+    const radius = 40;
     const centerX = width / 2;
     const centerY = height / 2;
 
     context.beginPath();
     context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-    context.fillStyle = "green";
+    context.fillStyle = "#00FF00";
     context.fill();
     context.lineWidth = 5;
     context.strokeStyle = "#003300";
