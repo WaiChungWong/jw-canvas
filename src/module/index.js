@@ -15,11 +15,16 @@ class Canvas extends Component {
   }
 
   _updateDimensions() {
-    const { canvas, props } = this;
-    const { offsetWidth, offsetHeight } = canvas;
-    const { maintainPixelSize } = props;
+    if (this.props.maintainPixelSize) {
+      this._checkResize();
+    }
+  }
 
-    if (maintainPixelSize) {
+  _checkResize() {
+    const { canvas, props } = this;
+    const { offsetWidth, offsetHeight, width, height } = canvas;
+
+    if (width !== offsetWidth || height !== offsetHeight) {
       canvas.width = offsetWidth;
       canvas.height = offsetHeight;
 
@@ -30,32 +35,23 @@ class Canvas extends Component {
   }
 
   _mount() {
-    const { canvas, props } = this;
+    const { canvas } = this;
 
     window.addEventListener("resize", this._resizeHandler, eventOptions);
     canvas.addEventListener("resize", this._resizeHandler, eventOptions);
 
     if (window.MutationObserver) {
       this.mutationObserver = new window.MutationObserver(this._resizeHandler);
-      this.mutationObserver.observe(canvas, { attributes: true });
+      this.mutationObserver.observe(document.documentElement, {
+        attributes: true,
+        subtree: true
+      });
     }
 
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
 
-    setTimeout(() => {
-      if (
-        canvas.width !== canvas.offsetWidth ||
-        canvas.height !== canvas.offsetHeight
-      ) {
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-
-        if (props.onResize) {
-          props.onResize(canvas.offsetWidth, canvas.offsetHeight);
-        }
-      }
-    });
+    setTimeout(() => this._checkResize());
   }
 
   _unmount() {

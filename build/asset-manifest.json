@@ -1,13 +1,13 @@
 {
   "main.css": "/jw-canvas/build/static/css/main.b36b16c6.chunk.css",
-  "main.js": "/jw-canvas/build/static/js/main.1435c657.chunk.js",
-  "main.js.map": "/jw-canvas/build/static/js/main.1435c657.chunk.js.map",
+  "main.js": "/jw-canvas/build/static/js/main.2fe73b6c.chunk.js",
+  "main.js.map": "/jw-canvas/build/static/js/main.2fe73b6c.chunk.js.map",
   "runtime~main.js": "/jw-canvas/build/static/js/runtime~main.129d7101.js",
   "runtime~main.js.map": "/jw-canvas/build/static/js/runtime~main.129d7101.js.map",
   "static/js/2.de045a94.chunk.js": "/jw-canvas/build/static/js/2.de045a94.chunk.js",
   "static/js/2.de045a94.chunk.js.map": "/jw-canvas/build/static/js/2.de045a94.chunk.js.map",
   "index.html": "/jw-canvas/build/index.html",
-  "precache-manifest.af168935e98f2f2521eacfa2bbcefafa.js": "/jw-canvas/build/precache-manifest.af168935e98f2f2521eacfa2bbcefafa.js",
+  "precache-manifest.47a9447c405c64db1363fec55ea2a05f.js": "/jw-canvas/build/precache-manifest.47a9447c405c64db1363fec55ea2a05f.js",
   "service-worker.js": "/jw-canvas/build/service-worker.js",
   "static/css/main.b36b16c6.chunk.css.map": "/jw-canvas/build/static/css/main.b36b16c6.chunk.css.map"
 }
